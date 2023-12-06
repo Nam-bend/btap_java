@@ -1,4 +1,4 @@
-
+import org.example.ex6_27t11;
 import java.util.Scanner;
 
 public class ex2_27t11 {
@@ -6,7 +6,6 @@ public class ex2_27t11 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("input String :");
         String arrays = scanner.nextLine();
-
         int[] lenght_str = new int[255];
         for (char ch : arrays.toCharArray()) {
             lenght_str[ch]++;
