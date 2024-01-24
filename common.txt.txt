@@ -4,88 +4,88 @@ SDLC
 3.Design 
 4.Implementation 
 5.Testing 
-6.Hand over - giai  do?n b�n giao cho user 
+6.Hand over - giai  đoạn bàn giao cho user 
 7.Maintenance 
  
 Software Development Life Cycle 
 A.Outsource
-1. Requirement - stakeholder(ngu?i quan t�m d?n gi� tr? c?a sp, customer(outsource), nh?ng ngu?i g�p v?n) 
-- business analyst: ngu?i ph�n t�ch nghi?p v?, vi?t doc cho d? �n
- - project manager - technical team (optional): d? do�n d? �n d? chu?n b? 
-- quality assurance (QA) ~ tester: hi?u requirement d? chu?n b? testing strategy - designer (UI/UX) ==>output: requirement document
+1. Requirement - stakeholder(người quan tâm đến giá trị của sp, customer(outsource), những người góp vốn) 
+- business analyst: người phân tích nghiệp vụ, viết doc cho dự án
+ - project manager - technical team (optional): dự đoán dự án để chuẩn bị 
+- quality assurance (QA) ~ tester: hiểu requirement để chuẩn bị testing strategy - designer (UI/UX) ==>output: requirement document
 2.Analysis
  - BA 
- -PM (project manager) - system analyst/architect (SA): lu?ng tru?c c�ng ngh? s? d?ng (design pattern, database, language, framework, microservice?,...)
+ -PM (project manager) - system analyst/architect (SA): lường trước công nghệ sử dụng (design pattern, database, language, framework, microservice?,...)
 - QA (optional) 
-==> bi?u d?: usecase, class, sequence, activity,... (ng�n ng? UML)
+==> biểu đồ: usecase, class, sequence, activity,... (ngôn ngữ UML)
 3.Design
  - UI/UX designer 
-- SA/TL: thi?t k? ki?n tr�c h? th?ng, structure, tech stack, data flow, database, tuong t�c vs h? th?ng kh�c 
-- PM ==> high level design 4. Implementation (vi?c th?c hi?n)
-- developer (frontend): ngu?i dua sp d?n vs ngu?i d�ng, d�ng analysis, UI/UX design 
-- backend engineer (backend), d�ng analysis, system design - devops ==> source code 
+- SA/TL: thiết kế kiến trúc hệ thống, structure, tech stack, data flow, database, tương tác vs hệ thống khác 
+- PM ==> high level design 4. Implementation (việc thực hiện)
+- developer (frontend): người đưa sp đến vs người dùng, dùng analysis, UI/UX design 
+- backend engineer (backend), dùng analysis, system design - devops ==> source code 
 4.Testing 
-- QA, tester: ki?m tra c�c t�nh nang dc code c� d�p ?ng requirement (requirement ch?c nang, phi ch?c nang (load ch?m)) ko 
-==>Output * manual test: file excel (k?t qu? t?ng testcase) * automation test: cypress, jmeter, robot * api test: postman collection, jmeter * k?t qu?
-5.Hand over - stakeholder (customer) - training staff - PM: xem c� b�n giao chu?n ko
- - QA: test l?n cu?i tru?c khi b�n giao
- ==> document specialist: hu?ng d?n ngu?i d�ng, t�i li?u h? th?ng
+- QA, tester: kiểm tra các tính năng dc code có đáp ứng requirement (requirement chức năng, phi chức năng (load chậm)) ko 
+==>Output * manual test: file excel (kết quả từng testcase) * automation test: cypress, jmeter, robot * api test: postman collection, jmeter * kết quả
+5.Hand over - stakeholder (customer) - training staff - PM: xem có bàn giao chuẩn ko
+ - QA: test lần cuối trước khi bàn giao
+ ==> document specialist: hướng dẫn người dùng, tài liệu hệ thống
 6.Maintenance 
-Gi?ng 1 v�ng b�n tr�n: - requirement - analysis - design - implementation - testing - hand over B. Product G?m t?t c? nh?ng giai do?n c?a outsource v� c� th�m: 6.1 publish 6.2 measure: th?ng k� s? ngu?i t?i, ngu?i mua,... 6.3 learn
+Giống 1 vòng bên trên: - requirement - analysis - design - implementation - testing - hand over B. Product Gồm tất cả những giai đoạn của outsource và có thêm: 6.1 publish 6.2 measure: thống kê số người tải, người mua,... 6.3 learn
 
 
 WATERFULL 
 Why? 
-- Y�u c?u r� r�ng 
-- M�i tru?ng ph�t tri?n ?n d?nh
- - D? hi?u, d? tri?n khai,
- - D? d�ng theo d�i ti?n d? ho�n th�nh 
-- C� t�i li?u thi?t k? s?m Requirement -> design->development->testing->deployment->Maintenance Waterfull l� g�?
- � Requirements : - L�m r� nh?ng g� ch�ng ta c?n ph?i l�m - C�c y�u c?u ch?c nang - C�c y�u c?u phi ch?c nang
- � Design - T�i li?u ph�n t�ch thi?t k? - C�c bi?u d? UML: uescases, class data flow - Giao di?n ngu?i d�ng: Figma,..high level design, high availability
- � Development - Vi?t c�c d�ng code front end, back end: api, job,.. - Thu?t to�n 
-� Testing - Unit test - Integration test - System test - acceptance test 
-� Deployment - Ch?y chuong tr�nh tr�n sever - H? th?ng c� th? du?c truy c?p qua internet 
-� Maintenance - S?a l?i ph�t sinh sau khi deploy h? th?ng m� ngu?i d�ng ph�t hi?n ra
-- Thu?ng s? xu?t hi?n trong th?i gian ng?n sau khi deploy s?n ph?m ?
- �p d?ng: th?c hi?n l?n lu?t theo t?ng giai do?n 
-+ Uu di?m:
- - D? hi?u, d? qu?n l�
- + Nhu?c di?m: 
-- Ph�t hi?n l?i mu?n
- - Kh�ng linh ho?t
- - Kh� khan trong vi?c u?c lu?ng th?i gian v� chi ph�
+- Yêu cầu rõ ràng 
+- Môi trường phát triển ổn định
+ - Dễ hiểu, dễ triển khai,
+ - Dễ dàng theo dõi tiến độ hoàn thành 
+- Có tài liệu thiết kế sớm Requirement -> design->development->testing->deployment->Maintenance Waterfull là gì?
+ • Requirements : - Làm rõ những gì chúng ta cần phải làm - Các yêu cầu chức năng - Các yêu cầu phi chức năng
+ • Design - Tài liệu phân tích thiết kế - Các biểu đồ UML: uescases, class data flow - Giao diện người dùng: Figma,..high level design, high availability
+ • Development - Viết các dòng code front end, back end: api, job,.. - Thuật toán 
+• Testing - Unit test - Integration test - System test - acceptance test 
+• Deployment - Chạy chương trình trên sever - Hệ thống có thể được truy cập qua internet 
+• Maintenance - Sửa lỗi phát sinh sau khi deploy hệ thống mà người dùng phát hiện ra
+- Thường sẽ xuất hiện trong thời gian ngắn sau khi deploy sản phẩm 
+ Áp dụng: thực hiện lần lượt theo từng giai đoạn 
++ Ưu điểm:
+ - Dễ hiểu, dễ quản lý
+ + Nhược điểm: 
+- Phát hiện lỗi muộn
+ - Không linh hoạt
+ - Khó khăn trong việc ước lượng thời gian và chi phí
 
 
 
 Agile 
-Tri?t l� Agile: l�m tnao d? nhanh ch�ng th�ch ?ng, ph?n h?i v?i s? thay d?i 
-4 tuy�n ng�n 
-c� nh�n v� s? tuong t�c > quy tr�nh v� c�ng c? 
-ph?n m?m ch?y t?t > t�i li?u d?y d? 
-c?ng t�c vs kh�ch h�ng > d�m ph�n h?p d?ng 
-ph?n h?i vs s? thay d?i > b�m v�o k? ho?ch 
-12 nguy�n t?c 
-1. uu ti�n cao nh?t l� tho? m�n kh�ch h�ng th�ng qua vi?c chuy?n giao s?m, li�n t?c 
-c�c ph?n m?m c� gi� tr? 
-2. ch�o d�n vi?c thay d?i y�u c?u 
-3. c�c quy tr�nh linh ho?t, t?n d?ng s? thay d?i trong c�c l?i th? c?nh tranh c?a kh�ch 
-h�ng 
-4. nh� kinh doanh v� nh� ph�t tri?n l�m vi?c c�ng nhau h�ng ng�y trong m?i d? �n 
-5. x�y d?ng c�c d? �n xung quanh nh?ng c� nh�n c� d?ng l?c, cung c?p cho h? m�i 
-tru?ng v� s? h? tr? c?n thi?t v� tin tu?ng h? d? ho�n th�nh c�ng vi?c 
-6. h?i tho?i tr?c ti?p l� phuong ph�p t?t nh?t d? truy?n d?t th�ng tin n?i b? 
-7. ph?n m?m ch?y t?t l� thu?c do c?a ti?n d? 
-8. c�c quy tr�nh linh ho?t th�c d?y ph�t tri?n b?n v?ng 
-9. li�n t?c quan t�m d?n c�c ki thu?t, thi?t k? t?t d? gia tang s? linh ho?t 
-10. s? don gi?n, ngh? thu?t t?i da ho� vi?c chua xong l� can b?n 
-11. c�c ki?n tr�c t?t, y�u c?u t?t nh?t, thi?t k? t?t nh?t du?c l�m ra b?i c�c nh�m t? t? 
-ch?c 
-12. nh�m ph�t tri?n s? thu?ng xuy�n nghi l�m sao d? tr? n�n hi?u qu? hon, h? di?u 
-ch?nh, thay d?i c�c h�nh vi c?a m�nh cho ph� h?pAgile 
+Triết lý Agile: làm tnao để nhanh chóng thích ứng, phản hồi với sự thay đổi 
+4 tuyên ngôn 
+cá nhân và sự tương tác > quy trình và công cụ 
+phần mềm chạy tốt > tài liệu đầy đủ 
+cộng tác vs khách hàng > đàm phán hợp đồng 
+phản hồi vs sự thay đổi > bám vào kế hoạch 
+12 nguyên tắc 
+1. ưu tiên cao nhất là thoả mãn khách hàng thông qua việc chuyển giao sớm, liên tục 
+các phần mềm có giá trị 
+2. chào đón việc thay đổi yêu cầu 
+3. các quy trình linh hoạt, tận dụng sự thay đổi trong các lợi thế cạnh tranh của khách 
+hàng 
+4. nhà kinh doanh và nhà phát triển làm việc cùng nhau hàng ngày trong mỗi dự án 
+5. xây dựng các dự án xung quanh những cá nhân có động lực, cung cấp cho họ môi 
+trường và sự hỗ trợ cần thiết và tin tưởng họ để hoàn thành công việc 
+6. hội thoại trực tiếp là phương pháp tốt nhất để truyền đạt thông tin nội bộ 
+7. phần mềm chạy tốt là thước đo của tiến độ 
+8. các quy trình linh hoạt thúc đẩy phát triển bền vững 
+9. liên tục quan tâm đến các kĩ thuật, thiết kế tốt để gia tăng sự linh hoạt 
+10. sự đơn giản, nghệ thuật tối đa hoá việc chưa xong là căn bản 
+11. các kiến trúc tốt, yêu cầu tốt nhất, thiết kế tốt nhất được làm ra bởi các nhóm tự tổ 
+chức 
+12. nhóm phát triển sẽ thường xuyên nghĩ làm sao để trở nên hiệu quả hơn, họ điều 
+chỉnh, thay đổi các hành vi của mình cho phù hợpAgile 
 2 
-chi?c � agile
-phuong ph�p: 
+chiếc ô agile
+phương pháp: 
 scrum: 4 meeting 
 planning 
 stand up 
@@ -95,4 +95,3 @@ extreme programming
 kanban 
 scrum banAgile 
 3
-
